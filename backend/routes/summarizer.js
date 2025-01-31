@@ -6,7 +6,7 @@ const textRoute = express.Router();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 
-const API_KEY = process.env.API_KEY || 'AIzaSyDNS6bNGnkRhNsVXQ33R0zPKAirkZIxixw';
+const API_KEY = process.env.API_KEY || 'Gemini-API';
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({model: "gemini-1.5-flash"});
 
